@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 
-function App() {
+function App2() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>ALLISO</h1>
+        <h1>ASDF</h1>
         <p>
           Página en construcción
         </p>
@@ -14,4 +14,4 @@ function App() {
   );
 }
 
-export default App;
+export default App2
