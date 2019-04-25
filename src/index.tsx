@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import App2 from './App2'
+import AdminDefault from './admin/AdminDefault'
 import * as serviceWorker from './serviceWorker';
 import {Switch, Route, Link, HashRouter as Router} from 'react-router-dom';
 
@@ -10,7 +10,8 @@ const routing = (
     <Router>
       <div>
         <Switch>
-          <Route exact path="/" render={App} />
+          <Route exact path="/admin" component={AdminDefault} />
+          <Route path="/" component={App} />
         </Switch>
       </div>
     </Router>
