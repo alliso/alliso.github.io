@@ -1,13 +1,3 @@
 theme: jekyll-theme-minimal
 title: Alejandro Lliso Cosin
-description:
-  - Java 11, 17 y 21
-  - Spring Boot
-  - Javascript
-  - Docker
-  - Cucumber
-  - TestContainers
-  - MongoDB
-  - Kafka
-  - Git
-  - PostgreSQL
+description: Java 11, 17 y 21 | Spring Boot | Javascript | Docker | Cucumber | TestContainers | MongoDB | Kafka | Git | PostgreSQL
