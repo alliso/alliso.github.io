@@ -1,5 +1,5 @@
 # Alejandro Lliso Cosin
-Developer with extensive experience in programming and system maintenance, and deep knowledge of languages such as Java, JavaScript, and TypeScript. I have participated in various application and system development projects, and have demonstrated my collaboration and teamwork skills in different professional contexts.
+Developer with extensive experience in programming and system maintenance, and deep knowledge of languages such as Java, JavaScript and TypeScript. I have participated in various application and system development projects, and have demonstrated my collaboration and teamwork skills in different professional contexts.
 
 # Work Experience
 
