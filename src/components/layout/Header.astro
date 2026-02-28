@@ -1,0 +1,31 @@
+---
+import type { Lang, UIStrings } from "../../i18n/ui";
+import LanguageSwitcher from "../ui/LanguageSwitcher.astro";
+
+interface Props {
+  lang: Lang;
+  t: (key: keyof UIStrings) => string;
+}
+
+const { lang, t } = Astro.props;
+const base = lang === "es" ? "/es" : "";
+---
+
+<header class="header">
+  <nav class="nav container">
+    <a href={`${base}/`} class="nav-brand">AO</a>
+    <div class="nav-links">
+      <a href={`${base}/#experience`}>{t("nav.experience")}</a>
+      <a href={`${base}/#skills`}>{t("nav.skills")}</a>
+      <a
+        href="https://github.com/alliso/resume/blob/main/pdf/cv.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="nav-cv"
+      >
+        {t("nav.cv")}
+      </a>
+    </div>
+    <LanguageSwitcher lang={lang} />
+  </nav>
+</header>

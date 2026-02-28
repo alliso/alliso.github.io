@@ -1,0 +1,43 @@
+---
+import type { Lang, UIStrings } from "../../i18n/ui";
+import { skills } from "../../data/skills";
+import type { Skill } from "../../data/skills";
+import SkillBadge from "../ui/SkillBadge.astro";
+
+interface Props {
+  lang: Lang;
+  t: (key: keyof UIStrings) => string;
+}
+
+const { lang, t } = Astro.props;
+
+type Category = Skill["category"];
+const categories: { key: Category; label: keyof UIStrings }[] = [
+  { key: "backend", label: "skills.backend" },
+  { key: "frontend", label: "skills.frontend" },
+  { key: "devops", label: "skills.devops" },
+  { key: "testing", label: "skills.testing" },
+];
+---
+
+<section id="skills" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">{t("skills.title")}</h2>
+    <div class="skills-grid">
+      {
+        categories.map(({ key, label }) => (
+          <div class="skills-category">
+            <h3 class="skills-category-title">{t(label)}</h3>
+            <div class="skills-badges">
+              {skills
+                .filter((s) => s.category === key)
+                .map((skill) => (
+                  <SkillBadge skill={skill} />
+                ))}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

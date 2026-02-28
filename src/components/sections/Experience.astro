@@ -1,0 +1,21 @@
+---
+import type { Lang, UIStrings } from "../../i18n/ui";
+import { experience } from "../../data/experience";
+import ExperienceItem from "../ui/ExperienceItem.astro";
+
+interface Props {
+  lang: Lang;
+  t: (key: keyof UIStrings) => string;
+}
+
+const { lang, t } = Astro.props;
+---
+
+<section id="experience" class="section">
+  <div class="container">
+    <h2 class="section-title">{t("experience.title")}</h2>
+    <div class="experience-list">
+      {experience.map((job) => <ExperienceItem job={job} lang={lang} />)}
+    </div>
+  </div>
+</section>

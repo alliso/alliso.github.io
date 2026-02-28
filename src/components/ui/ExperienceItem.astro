@@ -1,0 +1,29 @@
+---
+import type { Job } from "../../data/experience";
+import type { Lang } from "../../i18n/ui";
+
+interface Props {
+  job: Job;
+  lang: Lang;
+}
+
+const { job, lang } = Astro.props;
+const role = job.role[lang];
+const bullets = job.bullets[lang];
+---
+
+<div class="experience-item">
+  <div class="experience-header">
+    <div>
+      <h3 class="experience-company">{job.company}</h3>
+      <p class="experience-role">{role}</p>
+    </div>
+    <div class="experience-meta">
+      <span class="experience-period">{job.period}</span>
+      <span class="experience-location">{job.location}</span>
+    </div>
+  </div>
+  <ul class="experience-bullets">
+    {bullets.map((bullet) => <li>{bullet}</li>)}
+  </ul>
+</div>

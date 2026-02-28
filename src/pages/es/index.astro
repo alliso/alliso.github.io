@@ -1,0 +1,21 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/sections/Hero.astro";
+import Experience from "../../components/sections/Experience.astro";
+import Skills from "../../components/sections/Skills.astro";
+import { getLang, useTranslations } from "../../i18n/ui";
+
+const lang = getLang(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout
+  lang={lang}
+  t={t}
+  title="Allis Onojeghuo – Desarrollador Full Stack"
+  description="Portfolio de Allis Onojeghuo, Desarrollador Full Stack especializado en Java, Spring Boot y frontends web modernos."
+>
+  <Hero lang={lang} t={t} />
+  <Experience lang={lang} t={t} />
+  <Skills lang={lang} t={t} />
+</Layout>

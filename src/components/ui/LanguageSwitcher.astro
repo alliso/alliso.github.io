@@ -1,0 +1,16 @@
+---
+import type { Lang } from "../../i18n/ui";
+import { getAlternatePath } from "../../i18n/ui";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const alternate = getAlternatePath(Astro.url);
+const label = lang === "en" ? "ES" : "EN";
+---
+
+<a href={alternate} class="lang-switcher" aria-label="Switch language">
+  {label}
+</a>

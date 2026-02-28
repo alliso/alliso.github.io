@@ -1,0 +1,28 @@
+---
+import type { Lang, UIStrings } from "../../i18n/ui";
+
+interface Props {
+  lang: Lang;
+  t: (key: keyof UIStrings) => string;
+}
+
+const { lang, t } = Astro.props;
+---
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>
+      {t("footer.built")}
+      <a href="https://astro.build" target="_blank" rel="noopener">Astro</a>
+      {t("footer.and")}
+      <a href="https://tailwindcss.com" target="_blank" rel="noopener">Tailwind CSS</a>
+    </p>
+    <a
+      href="https://github.com/alliso/alliso.github.io"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {t("footer.source")}
+    </a>
+  </div>
+</footer>
