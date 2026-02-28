@@ -8,24 +8,40 @@ export interface Job {
 
 export const experience: Job[] = [
   {
-    company: "CTT Express",
-    role: { en: "Full Stack Developer", es: "Desarrollador Full Stack" },
-    period: "Feb 2023 – Present",
+    company: "Cognizant",
+    role: { en: "Back End Developer", es: "Desarrollador Back End" },
+    period: "Mar 2025 – Present",
     location: "Remote",
     bullets: {
       en: [
-        "Developed and maintained microservices with Java 17/21 and Spring Boot for parcel tracking and logistics workflows.",
-        "Built event-driven pipelines using Apache Kafka to process millions of parcel status events daily.",
-        "Designed and optimized PostgreSQL and MongoDB schemas for high-throughput data ingestion.",
-        "Created React and Angular dashboards consumed by operations and customer-service teams.",
-        "Improved observability with Grafana dashboards and alerting rules reducing MTTR by 40 %.",
+        "Design and development of scalable, high-quality software solutions using Java Spring Boot.",
+        "Application of innovative methodologies such as DDD and Scrum to streamline development and ensure software quality.",
+        "Design of microservices and use of technologies such as Kafka and Grafana.",
+        "Working for clients in the banking sector, including ING.",
       ],
       es: [
-        "Desarrollé y mantuve microservicios con Java 17/21 y Spring Boot para seguimiento de paquetes y flujos logísticos.",
-        "Construí pipelines event-driven con Apache Kafka para procesar millones de eventos de estado de paquetes al día.",
-        "Diseñé y optimicé esquemas PostgreSQL y MongoDB para ingestión de datos de alto rendimiento.",
-        "Creé dashboards en React y Angular consumidos por los equipos de operaciones y atención al cliente.",
-        "Mejoré la observabilidad con dashboards y reglas de alertas en Grafana, reduciendo el MTTR en un 40 %.",
+        "Creación y diseño de soluciones de software escalables y de alta calidad mediante el uso de tecnologías como Java Spring Boot.",
+        "Implementación de metodologías innovadoras como DDD y Scrum, que agilizan el proceso de desarrollo y aseguran la calidad del software.",
+        "Diseño de microservicios y uso de tecnologías como Kafka y Grafana.",
+        "Trabajando para clientes en el sector de la banca como ING.",
+      ],
+    },
+  },
+  {
+    company: "CTT Express",
+    role: { en: "Back End Developer", es: "Desarrollador Back End" },
+    period: "Feb 2023 – Mar 2025",
+    location: "Remote",
+    bullets: {
+      en: [
+        "Design and development of scalable, high-quality software solutions using Java Spring Boot.",
+        "Application of innovative methodologies such as TDD and Scrum to streamline development and ensure software quality.",
+        "Design of microservices and use of technologies such as Kafka and Grafana.",
+      ],
+      es: [
+        "Creación y diseño de soluciones de software escalables y de alta calidad mediante el uso de tecnologías como Java Spring Boot.",
+        "Implementación de metodologías innovadoras como TDD y Scrum, que agilizan el proceso de desarrollo y aseguran la calidad del software.",
+        "Diseño de microservicios y uso de tecnologías como Kafka y Grafana.",
       ],
     },
   },
@@ -36,16 +52,12 @@ export const experience: Job[] = [
     location: "Valencia, Spain",
     bullets: {
       en: [
-        "Built a research-data management platform with Spring Boot REST APIs and a Vue 3 frontend.",
-        "Integrated OAuth2/OIDC authentication via Keycloak for multi-tenant access control.",
-        "Containerised the entire stack with Docker Compose for reproducible local and staging environments.",
-        "Wrote integration tests with TestContainers, reaching 80 % backend coverage.",
+        "Development of scalable, high-quality software solutions using Java Spring Boot and Angular.",
+        "Creation and optimisation of Docker containers for both frontend and backend applications, simplifying and accelerating the deployment process in production and development environments.",
       ],
       es: [
-        "Construí una plataforma de gestión de datos de investigación con APIs REST en Spring Boot y frontend en Vue 3.",
-        "Integré autenticación OAuth2/OIDC mediante Keycloak para control de acceso multi-tenant.",
-        "Contenerisé toda la pila con Docker Compose para entornos locales y de staging reproducibles.",
-        "Escribí tests de integración con TestContainers, alcanzando el 80 % de cobertura en el backend.",
+        "Creación de soluciones de software escalables y de alta calidad mediante el uso de tecnologías como Java Spring Boot y Angular.",
+        "Experiencia en la creación y optimización de contenedores Docker tanto para el Frontend como el Backend de aplicaciones, con el objetivo de simplificar y acelerar el proceso de despliegue en entornos de producción y desarrollo.",
       ],
     },
   },
@@ -56,16 +68,16 @@ export const experience: Job[] = [
     location: "Valencia, Spain",
     bullets: {
       en: [
-        "Developed contact-centre SaaS features with Java 11, Spring Boot, and a TypeScript/React frontend.",
-        "Migrated a monolith to domain-driven microservices, cutting deployment lead time by 60 %.",
-        "Implemented BDD test suites with Cucumber + Selenium, reducing regression cycles.",
-        "Participated in on-call rotations and postmortem culture to improve system reliability.",
+        "Member of the R&D team, responsible for designing and implementing innovative, custom software solutions using cutting-edge technologies.",
+        "Implementation of Docker containers to automate and optimise company processes, improving business efficiency and productivity.",
+        "Maintenance and improvement of existing applications by adding new features and resolving technical issues.",
+        "Application of agile methodologies such as SCRUM for software project management, using tools like Jira for planning and task tracking.",
       ],
       es: [
-        "Desarrollé funcionalidades SaaS para contact center con Java 11, Spring Boot y frontend TypeScript/React.",
-        "Migré un monolito a microservicios orientados a dominio, reduciendo el lead time de despliegue en un 60 %.",
-        "Implementé suites de tests BDD con Cucumber + Selenium, reduciendo los ciclos de regresión.",
-        "Participé en guardias y cultura de postmortems para mejorar la fiabilidad del sistema.",
+        "Integrante del equipo de I+D de la empresa, encargado de diseñar e implementar soluciones de software innovadoras y personalizadas mediante el uso de tecnologías de vanguardia.",
+        "Implementación de contenedores Docker para automatizar y optimizar los procesos de la empresa, con el objetivo de mejorar la eficiencia y productividad del negocio.",
+        "Mantenimiento y mejora de aplicaciones ya existentes mediante la adición de nuevas funcionalidades y la solución de problemas técnicos.",
+        "Aplicación de metodologías ágiles como SCRUM para la gestión de proyectos de software, utilizando herramientas como Jira para la planificación y seguimiento de tareas.",
       ],
     },
   },
@@ -76,12 +88,10 @@ export const experience: Job[] = [
     location: "Valencia, Spain",
     bullets: {
       en: [
-        "Provided first- and second-level hardware and software support for corporate users.",
-        "Scripted routine maintenance tasks in Bash, reducing ticket resolution time.",
+        "Maintenance of Linux operating systems, including process automation using programming languages such as Python.",
       ],
       es: [
-        "Proporcioné soporte hardware y software de primer y segundo nivel a usuarios corporativos.",
-        "Automaticé tareas de mantenimiento rutinarias en Bash, reduciendo el tiempo de resolución de tickets.",
+        "Mantenimiento de sistemas operativos Linux, incluyendo la automatización de procesos mediante el uso de lenguajes de programación como Python.",
       ],
     },
   },
@@ -92,12 +102,10 @@ export const experience: Job[] = [
     location: "Bergen, Norway",
     bullets: {
       en: [
-        "Built responsive UI components with JavaScript and CSS for a Norwegian media startup.",
-        "Collaborated in an agile team across two time zones, communicating in English daily.",
+        "Development of frontend applications using frameworks such as React and TypeScript, delivering an agile and intuitive user experience.",
       ],
       es: [
-        "Construí componentes de UI responsivos con JavaScript y CSS para una startup de medios noruega.",
-        "Colaboré en un equipo ágil a través de dos husos horarios, comunicándome en inglés a diario.",
+        "Experiencia en el desarrollo de aplicaciones Front End mediante el uso de frameworks como React y TypeScript, con el fin de brindar una experiencia de usuario ágil e intuitiva.",
       ],
     },
   },

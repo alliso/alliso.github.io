@@ -5,9 +5,9 @@ export const en = {
   "nav.cv": "Download CV",
 
   // Hero
-  "hero.role": "Full Stack Developer",
+  "hero.role": "Back End Developer",
   "hero.bio":
-    "Software engineer with 6+ years of experience building scalable backend services and modern frontends. Passionate about clean code, event-driven architectures, and continuous delivery.",
+    "Developer with extensive experience in software programming and system maintenance, with in-depth knowledge of various languages, primarily Java. I have participated in diverse application and system development projects, demonstrating my collaboration and teamwork skills across different professional environments.",
   "hero.cv": "View CV",
   "hero.scrollDown": "See my work",
 
